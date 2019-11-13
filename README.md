@@ -7,4 +7,4 @@ Based on portfolio templates by [James Bedford](https://github.com/DopestTech/De
 
 [Blog post about hosting this site in Azure](https://www.halldorstefans.com/moving-my-static-site-to-azure-storage-saving-time/)
 
-HTML, CSS, Azure Storage Account,& Azure CDN
+HTML, CSS, Azure Storage Account, & Azure CDN
