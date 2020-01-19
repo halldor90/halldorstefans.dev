@@ -8,21 +8,12 @@
   <meta content="Development portfolio of Halldór Stefánsson " name="description" property="og:description">
   <link rel="shortcut icon" type="image/png" href="img/LogoHS.png">
 
-  <!-- Link to the relevant stylesheet -->
   <link href="/css/style.css" rel="stylesheet">
 
-  <!--[if lte IE 8]>
-      <link href="dist/css/blockIE.css" rel="stylesheet">
-    <![endif]-->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <!-- Load JQuery, as our little script depends on it -->
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,600,400" rel="stylesheet" type="text/css">
-  <!-- Load our font from Google -->
 
-
-  <!-- This is a neat little effect that fades the website in from white when it is loaded. This will work in unison with an 
-  animation effect if you have one. It also means the user won't see the pictures load which is nice. -->
   <script>
     $(window).load(function () {
       $('.preloader').delay(400).fadeOut('slow');
@@ -32,18 +23,16 @@
 
 
 <body>
-  <!-- This calls the little script written above. -->
+
   <div class="preloader"></div>
 
-  <!-- The Intro section begins -->
   <section class="intro">
     <div class="intro-img">
       <div class="Hi">
-        <img class="img-circle" src="img/HS.jpg" alt="...">
+        <img class="img-circle" src="/img/HS.jpg" alt="...">
       </div>
     </div>
     <div class="intro-text">
-      <!-- Seperates the text section from the arrow. -->
       <div class="Hi">
         <h1>I'm <span>Halldór Stefánsson</span></h1>
         <h3><span>Software developer</span> located in Bristol, UK.</h3>
@@ -53,37 +42,31 @@
       </div>
     </div>
   </section>
-  <!-- Intro section ends -->
 
-  <!-- The portfolio section begins -->
   <section class="projects">
     <div class="projects-collage">
 
-      <!-- Project One -->
       <a class="project-item" href="https://www.halldorstefans.com" target="_blank">
         <figure class="project-figure">
           <div class="project-overlay"></div>
           <img src="/img/halldorstefansCover.jpg">
           <figcaption class="project-text">
-            <h2>My Blog</h2>
+            <h2>Blog</h2>
             <p></p>
           </figcaption>
         </figure>
       </a>
-      <!-- Project One Ends -->
 
-      <!-- Project Two -->
       <a class="project-item" onClick="window.open('resume/Halldor_Resume.pdf');" target="_blank">
         <figure class="project-figure">
           <div class="project-overlay"></div>
-          <img src="/img/dettifoss.png">
+          <img src="/img/resumeImg.jpeg">
           <figcaption class="project-text">
-            <h2>My Resume</h2>
+            <h2>Resume</h2>
             <p></p>
           </figcaption>
         </figure>
       </a>
-      <!-- Project Two Ends -->
 
       <!-- Project Three 
         <a class="project-item" href="https://www.github.com/jabedford" target="_blank">
@@ -139,17 +122,13 @@
 
     </div>
   </section>
-  <!-- Portfolio section ends -->
 
-  <!-- Contact button section begins -->
   <section class="content contact">
     <a class="button-slide" data-hover="halldor90@gmail.com" href="mailto:halldor90@gmail.com">
       <span>Contact Me </span>
     </a>
   </section>
-  <!-- Contact button section ends-->
 
-  <!-- Footer section begins - If you do not want links here, you can change the <li> items to just be <p> tags or whatever you require -->
   <footer>
     <div class="wrapper">
       <ul>
@@ -168,7 +147,7 @@
       </ul>
     </div>
   </footer>
-  <!-- Footer section ends -->
+
 </body>
 
 </html>
