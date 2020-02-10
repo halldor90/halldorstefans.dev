@@ -1,153 +1,99 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Halldór Stefánsson</title>
-  <meta content="Development portfolio of Halldór Stefánsson " name="description" property="og:description">
-  <link rel="shortcut icon" type="image/png" href="img/LogoHS.png">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Development portfolio of Halldór Stefánsson" name="description" property="og:description">
+    <title>Halldór Stefánsson</title>
 
-  <link href="/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/LogoHS.png">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,600,400" rel="stylesheet" type="text/css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      $(window).load(function () {
+        $('.preloader').delay(200).fadeOut('fast');
+      })
+    </script>
+  </head>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,600,400" rel="stylesheet" type="text/css">
+  <body>
+    <div class="preloader"></div>
 
-  <script>
-    $(window).load(function () {
-      $('.preloader').delay(400).fadeOut('slow');
-    })
-  </script>
-</head>
+    <header class="intro">
+        <div class="Hi">
+          <img class="img-circle" src="img/HS.jpg" alt="Profile Image">
+        </div>      
+        <div class="Hi">
+          <h1>I'm <span>Halldór Stefánsson</span></h1>
+          <h3><span>Software developer</span> located in Bristol, UK.</h3>
+          <p>I build automated systems and integrations, with a demonstrated history of working in the computer software
+            industry. Strong engineering professional with a Bachelor’s Degree in Mechatronics Engineering from Reykjavik
+            University.</p>
+        </div>
+      
+    </header>
 
+    <main>
+      <section class="projects">
+        <div class="projects-wrap">
 
-<body>
+          <section class="project-item">       
+            <a href="https://www.halldorstefans.com" target="_blank">
+              <figure>
+                <img src="img/halldorstefansCover.jpg" alt="Blog cover image">
+                <figcaption class="project-text">
+                  <h2>Blog</h2>
+                  <p></p>
+                </figcaption>
+              </figure>
+            </a>
+          </section>
 
-  <div class="preloader"></div>
+          <section class="project-item">  
+            <a onClick="window.open('resume/Halldor_Resume.pdf');" target="_blank">
+              <figure>
+                <img src="img/resumeImg.jpeg" alt="Resume cover image">
+                <figcaption class="project-text">
+                  <h2>Resume</h2>
+                  <p></p>
+                </figcaption>
+              </figure>
+            </a>
+          </section>
 
-  <section class="intro">
-    <div class="intro-img">
-      <div class="Hi">
-        <img class="img-circle" src="/img/HS.jpg" alt="...">
-      </div>
-    </div>
-    <div class="intro-text">
-      <div class="Hi">
-        <h1>I'm <span>Halldór Stefánsson</span></h1>
-        <h3><span>Software developer</span> located in Bristol, UK.</h3>
-        <p>I build automated systems and integrations, with a demonstrated history of working in the computer software
-          industry. Strong engineering professional with a Bachelor’s Degree in Mechatronics Engineering from Reykjavik
-          University.</p>
-      </div>
-    </div>
-  </section>
+        </div>
+      </section>
+    </main>    
 
-  <section class="projects">
-    <div class="projects-collage">
-
-      <a class="project-item" href="https://www.halldorstefans.com" target="_blank">
-        <figure class="project-figure">
-          <div class="project-overlay"></div>
-          <img src="/img/halldorstefansCover.jpg">
-          <figcaption class="project-text">
-            <h2>Blog</h2>
-            <p></p>
-          </figcaption>
-        </figure>
-      </a>
-
-      <a class="project-item" onClick="window.open('resume/Halldor_Resume.pdf');" target="_blank">
-        <figure class="project-figure">
-          <div class="project-overlay"></div>
-          <img src="/img/resumeImg.jpeg">
-          <figcaption class="project-text">
-            <h2>Resume</h2>
-            <p></p>
-          </figcaption>
-        </figure>
-      </a>
-
-      <!-- Project Three 
-        <a class="project-item" href="https://www.github.com/jabedford" target="_blank">
-          <figure class="project-figure">
-            <div class="project-overlay"></div>
-            <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5eb27a51db4fda32656d35b5e6b93574&auto=format&fit=crop&w=1050&q=80">
-            <figcaption class="project-text">
-              <h2>Project Three</h2>
-              <p>Awesome Development</p>
-            </figcaption>
-          </figure>
+    <footer>
+      <section class="contact">
+        <a class="button-slide" data-hover="halldor90@gmail.com" href="mailto:halldor90@gmail.com">
+          <span>Contact Me </span>
         </a>
-        <!-- Project Three Ends 
-        
-        <!-- Project Four 
-        <a class="project-item" href="https://www.github.com/jabedford" target="_blank">
-          <figure class="project-figure">
-            <div class="project-overlay"></div>
-            <img src="https://images.unsplash.com/photo-1494366222322-387658a1a976?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=24100980ab1a60783e1c847b7965bd11&auto=format&fit=crop&w=1051&q=80">
-            <figcaption class="project-text">
-              <h2>Project Four</h2>
-              <p>Awesome Development</p>
-            </figcaption>
-          </figure>
-        </a>
-        <!-- Project Four Ends 
-        
-        <!-- Project Five 
-        <a class="project-item" href="https://www.github.com/jabedford" target="_blank">
-          <figure class="project-figure">
-            <div class="project-overlay"></div>
-            <img src="https://images.unsplash.com/photo-1511107898938-65e7577d8fcf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=67e97ce300372131dade414f7ef77661&auto=format&fit=crop&w=1050&q=80">
-            <figcaption class="project-text">
-              <h2>Project Five</h2>
-              <p>Awesome Development</p>
-            </figcaption>
-          </figure>
-        </a>
-        <!-- Project Five Ends 
-        
-        <!-- Project Six 
-        <a class="project-item" href="https://www.github.com/jabedford" target="_blank">
-          <figure class="project-figure">
-            <div class="project-overlay"></div>
-            <img src="https://images.unsplash.com/photo-1526049997133-25caee4c5796?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a785d2392ba5c7683a2b09ee1b40b20&auto=format&fit=crop&w=1048&q=80">
-            <figcaption class="project-text">
-              <h2>Project Six</h2>
-              <p>Awesome Development</p>
-            </figcaption>
-          </figure>
-        </a>
-        <!-- Project Six Ends -->
+      </section>
+      <section>
+        <ul>
+          <li>
+            <a href="https://instagram.com/halldorstefans" target="_blank">Instagram</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/halldorstefans" target="_blank">Linkedin</a>
+          </li>
+          <li>
+            <a href="https://github.com/halldorstefans" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a href="https://dev.to/halldorstefans" target="_blank">Dev.to</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/halldorstefans" target="_blank">Twitter</a>
+          </li>        
+        </ul>
+      </section>
+    </footer>
 
-    </div>
-  </section>
-
-  <section class="content contact">
-    <a class="button-slide" data-hover="halldor90@gmail.com" href="mailto:halldor90@gmail.com">
-      <span>Contact Me </span>
-    </a>
-  </section>
-
-  <footer>
-    <div class="wrapper">
-      <ul>
-        <li>
-          <a href="https://instagram.com/halldorstefans" target="_blank">Instagram</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/halldorstefans" target="_blank">Linkedin</a>
-        </li>
-        <li>
-          <a href="https://github.com/halldor90" target="_blank">GitHub</a>
-        </li>
-        <li>
-          <a href="https://dev.to/halldorstefans" target="_blank">Dev.to</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-
-</body>
-
+  </body>
 </html>
