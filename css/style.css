@@ -107,7 +107,7 @@ header {
 /*Projects styles*/
 .projects {
     background: #c0c5c1;
-    margin-top: 80vh;
+    margin-top: 70vh;
     text-align: center
 }
 
@@ -134,7 +134,7 @@ header {
     line-height: 0;
     overflow: hidden;
     cursor: pointer;
-    transition: all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out;
 }
 
 .project-item:hover{
@@ -157,7 +157,7 @@ header {
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
     font-weight: 300;
-    color: #fafafa
+    color: #616161;
 }
 
 .project-text h2 {
