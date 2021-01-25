@@ -1,0 +1,374 @@
+/* Reset section */
+
+.footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.projects,.contact,footer {
+    text-align: center
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    -webkit-tap-highlight-color: transparent
+}
+
+*,*::before,*::after {
+    box-sizing: inherit
+}
+
+html,body,ul,ol,figure {
+    margin: 0;
+    padding: 0
+}
+
+::-moz-selection {
+    background: #eee
+}
+
+::selection {
+    background: #eee
+}
+
+h1,h2,h3 {
+    margin: 0
+}
+
+p {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+/* Global styles */
+
+:root {
+    --primary-color: #0082FF;
+    --secondary-color: #efefef;
+    --font-color: #494949;
+    --bg-color: #fafafa;
+    --heading-color: #494949;
+}
+
+/* Main body styles */
+
+body {
+    font: 100% "Work Sans", Helvetica, sans-serif;
+    color: var(--heading-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    line-height: 1.5;
+    position: relative;
+}
+
+a {
+    color: var(-secondary-color);
+    font-weight: 300;
+    position: relative;
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none
+}
+
+a:hover,a:focus {
+    color: var(--secondary-color);
+    outline: none
+}
+
+p {
+    font-weight: 300
+}
+
+
+/* Header styles */
+
+header {
+    background-color: var(--bg-color);
+    padding-top: 8rem;
+}
+
+.intro {
+    position: fixed;
+    top: 0;
+    height: 90vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.Hi {
+    max-width: 74rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 2rem
+}
+
+.img-circle {
+    border-radius: 50%;
+    height: 20%;
+    width: 20%;
+}
+
+.intro h1 {
+    width: 75%;
+    font-size: 2rem;
+    font-size: calc(2rem + 1vw);
+    line-height: 1.4;
+    font-weight: 400
+}
+
+.intro span {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .intro {
+        text-align: center
+    }
+
+    .intro h1 {
+        width: 100%
+    }
+    .Hi {
+        padding: 0 1rem
+    }
+}
+
+/* Projects styles */
+
+.projects {
+    background: var(--secondary-color);
+    margin-top: 70vh;
+}
+
+.projects .projects-collage {
+    max-width: 96rem;
+    margin: 0 auto
+}
+
+.projects .projects-collage::after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.projects .projects-collage img {
+    max-width: 100%;
+    height: auto
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(60, 60, 77);
+    opacity: 0;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in
+}
+
+a.project-item {
+    position: relative;
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+a.project-item:hover .project-overlay {
+    opacity: .7
+}
+
+a.project-item:hover .project-text {
+    top: 50%;
+    opacity: 1
+}
+
+a.project-item:hover .project-text h2:after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+}
+
+.project-text {
+    position: absolute;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    line-height: 1;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    font-weight: 300;
+    color: var(--secondary-color);
+}
+
+.project-text h2 {
+    position: relative;
+    font-size: 2rem;
+    padding-bottom: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: .125rem
+}
+
+.project-text p {
+    margin: 0;
+    padding-top: 1.5rem
+}
+
+@media (min-width: 769px) {
+    a.project-item {
+        width: 50%;
+        float: left
+    }
+}
+
+@media (max-width: 768px) {
+    .projects {
+        margin-top: 100vh;
+    }
+    
+    a.project-item .project-overlay {
+        opacity:.7
+    }
+
+    a.project-item .project-text {
+        top: 50%;
+        opacity: 1
+    }
+}
+
+/*Footer styles*/
+footer {
+    padding: 3rem 0 3rem;
+    background-color: var(--bg-color);
+}
+
+.contact {
+    padding: 3rem;
+}
+
+a.button-slide {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    letter-spacing: .15rem;
+    font-weight: 300;
+    font-size: 1.5em;
+    height: 5rem;
+    line-height: 5rem;
+    min-width: 24rem;
+    overflow: hidden;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+a.button-slide span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: inherit;
+    transition: inherit;
+}
+
+a.button-slide:before {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: inherit;
+    transition: inherit;
+    content: attr(data-hover);
+    color: var(--primary-color);
+}
+
+a.button-slide:hover,
+a.button-slide:focus {
+    background-color: var(--bg-color);
+}
+
+a.button-slide:hover span,
+a.button-slide:focus span {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+a.button-slide:hover:before,
+a.button-slide:focus:before {
+    top: 0;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: 1s;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 1rem;
+    margin-right: -.375em;
+    position: relative;
+}
+
+footer ul li:before {
+    content: "";
+    display: block;
+    background-color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    line-height: 0;
+    width: 1px;
+    height: .75rem;
+    margin-top: -.375rem;
+}
+
+footer ul li:first-child:before {
+    display: none;
+}
+
+footer ul li a {
+    letter-spacing: .0625rem;
+    cursor: pointer;
+}
+
+footer ul li a:after {
+    content: "";
+    display: block;
+    background-color: transparent;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
+
+footer ul li a:hover:after {
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    a.button-slide{
+        min-width: 12rem;
+        font-size: 0.8em;
+    }
+
+    a.button-slide span{
+        font-size: 1.5em;
+    }
+}

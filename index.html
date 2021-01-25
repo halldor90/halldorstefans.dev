@@ -5,64 +5,82 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Development portfolio of Halldór Stefánsson" name="description" property="og:description">
-    <title>Halldór Stefánsson</title>
+    <title>Halldór Stefánsson Development Portfolio</title>
 
     <link rel="shortcut icon" type="image/png" href="img/LogoHS.png">
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,600,400" rel="stylesheet" type="text/css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>
-      $(window).load(function () {
-        $('.preloader').delay(200).fadeOut('fast');
-      })
-    </script>
   </head>
 
   <body>
-    <div class="preloader"></div>
-
     <header class="intro" role="heading">
         <div class="Hi">
           <img class="img-circle" src="img/HS.jpg" alt="Profile Image">
         </div>      
         <div class="Hi">
           <h1>I'm <span>Halldór Stefánsson</span></h1>
-          <h3><span>Software developer</span> located in Bristol, UK.</h3>
+          <h2><span>Software developer</span> located in Bristol, UK.</h2>
           <p>I build automated systems and integrations, with a demonstrated history of working in the computer software
             industry. Strong engineering professional with a Bachelor’s Degree in Mechatronics Engineering from Reykjavik
             University.</p>
-        </div>
-      
+        </div>      
     </header>
 
     <main role="main">
       <section class="projects">
-        <div class="projects-wrap">
+        <div class="projects-collage">
 
-          <section class="project-item">            
-            <a href="https://github.com/halldorstefans/AutomaticEmailNewsletter" target="_blank">
-              <figure role="figure">
-                <img src="img/mailbox.jpg" alt="Email Image" role="img">
-                <figcaption class="project-text">
-                  <h2 style="color: #fafafa;">Automatic Email Newsletter</h2>
-                  <p></p>
-                </figcaption>
-              </figure>
-            </a>
-          </section>
+          <a class="project-item" href="https://github.com/halldorstefans/McLarenAPI" target="_blank">
+            <figure class="project-figure" role="figure">
+              <div class="project-overlay"></div>
+              <img src="img/mclarenAPI.jpg" alt="McLaren API Image" role="img">
+              <figcaption class="project-text">
+                <h2 >McLaren API</h2>
+                <p>Unofficial API for McLaren Formula 1</p>
+                <p>Developed using .NET Core & deployed to Azure</p>
+                <p>Click to open GitHub repository</p>
+              </figcaption>
+            </figure>
+          </a>
 
-          <section class="project-item">  
-            <a href="https://github.com/halldorstefans/DayDashboard" target="_blank">
-              <figure role="figure">
-                <img src="img/DayDashboard.png" alt="Dashboard Image" role="img">
-                <figcaption class="project-text">
-                  <h2>Day Dashboard</h2>
-                  <p></p>
-                </figcaption>
-              </figure>
-            </a>
-          </section>
+          <a class="project-item" href="https://github.com/halldorstefans/AutomaticEmailNewsletter" target="_blank">
+            <figure class="project-figure" role="figure">
+              <div class="project-overlay"></div>
+              <img src="img/AutomaticEmailNewsletter.png" alt="Email Image" role="img">
+              <figcaption class="project-text">
+                <h2>Automatic Email Newsletter</h2>
+                <p>Generates a daily newsletter</p>
+                <p>Developed Azure Functions & Table Storage</p>
+                <p>Click to open GitHub repository</p>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a class="project-item" href="https://github.com/halldorstefans/DayDashboard" target="_blank">
+            <figure class="project-figure" role="figure">
+              <div class="project-overlay"></div>
+              <img src="img/DayDashboard.png" alt="Dashboard Image" role="img">
+              <figcaption class="project-text">
+                <h2>Day Dashboard</h2>
+                <p>Displays calendar events, bus schedule & weather forecast</p>
+                <p>Developed using .NET Core</p>
+                <p>Click to open GitHub repository</p>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a class="project-item" href="https://github.com/halldorstefans/PyOneRacing" target="_blank">
+            <figure class="project-figure" role="figure">
+              <div class="project-overlay"></div>
+              <img src="img/Gameplay.png" alt="PyOne Racing Image" role="img">
+              <figcaption class="project-text">
+                <h2 >Py-One Racing</h2>
+                <p>Car racing game for fun</p>
+                <p>Developed using Python</p>
+                <p>Click to open GitHub repository</p>
+              </figcaption>
+            </figure>
+          </a>
 
         </div>
       </section>
@@ -70,26 +88,31 @@
 
     <footer role="contentinfo">
       <section class="contact">
-        <a class="button-slide" data-hover="halldor90@gmail.com" href="mailto:halldor90@gmail.com" role="button">
+        <a class="button-slide" data-hover="halldor@halldorstefans.dev" href="mailto:halldor@halldorstefans.dev" role="button">
           <span>Contact Me </span>
         </a>
       </section>
       <section>
         <ul role="list">
           <li>
-            <a href="https://www.halldorstefans.com" target="_blank">Blog</a>
+            <a href="https://www.halldorstefans.com" target="_blank">
+              <img src="https://img.icons8.com/fluent-systems-filled/48/000000/blog.png"/>
+            </a>
           </li>
           <li>
-            <a href="https://instagram.com/halldorstefans" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/halldorstefans" target="_blank">
+              <img src="https://img.icons8.com/material-outlined/48/000000/linkedin.png"/>
+            </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/halldorstefans" target="_blank">Linkedin</a>
+            <a href="https://github.com/halldorstefans" target="_blank">
+              <img src="https://img.icons8.com/fluent/48/000000/github.png"/>
+            </a>
           </li>
           <li>
-            <a href="https://github.com/halldorstefans" target="_blank">GitHub</a>
-          </li>
-          <li>
-            <a href="https://twitter.com/halldorstefans" target="_blank">Twitter</a>
+            <a href="https://twitter.com/halldorstefans" target="_blank">
+              <img src="https://img.icons8.com/material-outlined/48/000000/twitter.png"/>
+            </a>
           </li>        
         </ul>
       </section>
