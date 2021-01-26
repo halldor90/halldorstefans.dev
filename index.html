@@ -10,24 +10,37 @@
     <link rel="shortcut icon" type="image/png" href="img/LogoHS.png">
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,600,400" rel="stylesheet" type="text/css">
+    <script src="index.js" type="text/javascript"></script>
   </head>
 
   <body>
+
     <header class="intro" role="heading">
         <div class="Hi">
           <img class="img-circle" src="img/HS.jpg" alt="Profile Image">
         </div>      
         <div class="Hi">
-          <h1>I'm <span>Halldór Stefánsson</span></h1>
-          <h2><span>Software developer</span> located in Bristol, UK.</h2>
-          <p>I build automated systems and integrations, with a demonstrated history of working in the computer software
-            industry. Strong engineering professional with a Bachelor’s Degree in Mechatronics Engineering from Reykjavik
-            University.</p>
-        </div>      
+          <h1>Hi - I'm <span>Halldór Stefánsson</span></h1>
+          <h2>I write code and articles.</h2>
+          <p>The code I write is mostly back-end development, building and designing APIs. <br>
+          My articles are largely on the topic of technology.</p>
+          <p>Below you can see some of my personal projects.</p>
+        </div>        
     </header>
 
+    <nav>
+      <a href="https://www.halldorstefans.com" target="_blank">Blog</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <div class="switch">        
+        <span class="inner-switch">
+          <img id="imgTheme"/>
+        </span>
+      </div>
+    </nav>
+
     <main role="main">
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="projects-collage">
 
           <a class="project-item" href="https://github.com/halldorstefans/McLarenAPI" target="_blank">
@@ -87,31 +100,26 @@
     </main>    
 
     <footer role="contentinfo">
-      <section class="contact">
-        <a class="button-slide" data-hover="halldor@halldorstefans.dev" href="mailto:halldor@halldorstefans.dev" role="button">
+      <section class="contact" id="contact">
+        <a class="button-slide" data-hover="hello@halldorstefans.dev" href="mailto:hello@halldorstefans.dev" role="button">
           <span>Contact Me </span>
         </a>
       </section>
       <section>
         <ul role="list">
           <li>
-            <a href="https://www.halldorstefans.com" target="_blank">
-              <img src="https://img.icons8.com/fluent-systems-filled/48/000000/blog.png"/>
-            </a>
-          </li>
-          <li>
             <a href="https://www.linkedin.com/in/halldorstefans" target="_blank">
-              <img src="https://img.icons8.com/material-outlined/48/000000/linkedin.png"/>
+              <img id="imgLinkedin"/>
             </a>
           </li>
           <li>
             <a href="https://github.com/halldorstefans" target="_blank">
-              <img src="https://img.icons8.com/fluent/48/000000/github.png"/>
+              <img id="imgGithub"/>
             </a>
           </li>
           <li>
             <a href="https://twitter.com/halldorstefans" target="_blank">
-              <img src="https://img.icons8.com/material-outlined/48/000000/twitter.png"/>
+              <img id="imgTwitter"/>
             </a>
           </li>        
         </ul>
